@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Src.wsgi.application'
+WSGI_APPLICATION = 'heroku logs --tail.application'
 
 
 # Database
