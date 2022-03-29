@@ -17,9 +17,15 @@ from django.contrib import admin
 from django.urls import include, path
 from .views import Index
 
-
+#chemin vers les different page du projet
 urlpatterns = [
+    
+    #Chemin vers page index 
+    
     path('',Index,name="HomePage"),
+    
+    #chemin vers les diffent page de l'application (Chiffrement et dechiffrement)
+    
     path('',include("Chiffrement.urls")),
     path('admin/', admin.site.urls),
 ]
